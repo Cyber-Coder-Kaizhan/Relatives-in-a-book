@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Family Book</title>
+</head>
+<body style="text-align:center;">
+<h1>My Family Book</h1>
+<img id="img" src="https://previews.123rf.com/images/polyudova/polyudova1703/polyudova170300083/74768215-flat-style-vector-happy-family-mother-father-and-two-sons.jpg"style="height:300px;">
+<br><br>
+<h1 id="names"></h1>
+<br>
+<button type="button" id="btn" onclick="change1()">Next</button style="text-align:center;">
+<script>
+var images = [
+  "https://www.clipartmax.com/png/middle/243-2439854_mother-cartoon-clip-art-animated-mom-png.png",
+  "https://image.freepik.com/free-vector/real-state-agent-cartoon_24640-36160.jpg",
+  "https://png.pngitem.com/pimgs/s/3-36498_download-boy-png-file-little-boy-clipart-transparent.png",
+  "https://webstockreview.net/images/boy-clipart-animated.jpg"
+];
+var names = [
+  "Mother",
+  "Father",
+  "Elder Brother",
+  "Me"];
+var x=0;
+function change1() {
+document.getElementById("img").src=images[x]; 
+document.getElementById("names").innerHTML=names[x];
+x++;
+}
+
+</script>
+</body>
+</html>
